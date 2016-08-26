@@ -1,0 +1,30 @@
+.menu {
+    background-color: rebeccapurple;
+    min-height: 100px;
+    top:20px;
+    left:250px;
+    width: 600px;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.item {
+    width: 100px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.content {
+    margin-top: 140px;
+    padding: 20px;
+    background-color: burlywood;
+}

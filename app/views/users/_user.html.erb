@@ -1,0 +1,12 @@
+<li>
+  <%# user is the block variable %>
+<%= gravatar_for user, size: 50 %>
+<%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) %>
+      <%# current_user statement checks that we don't insert link to user delete himself! %>
+      | <%= link_to "delete", user, method: :delete,
+                    data: { confirm: "You sure?" } %>
+      <%# Links to the user but issuing a delete request instead of a GET one %>
+  <% end %>
+
+</li>
